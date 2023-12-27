@@ -1,0 +1,17 @@
+.card__user {
+    width: 184px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .card__user {
+        width: 226px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card__user {
+       width: 165px;
+       margin-left: 2px;
+    }
+}

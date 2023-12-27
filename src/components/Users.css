@@ -1,0 +1,233 @@
+.main__user_card {
+    width: 98%;
+    margin: 8px;
+}
+
+.image__detaile {
+    height: 160px;
+}
+/* absolute top-[60px] left-5 w-[160px] h-[160px] rounded-full bg-blue-gray-300 */
+
+.avatar_detaile_dev {
+    position: absolute;
+    top: 60px;
+    left: 24px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: gray;
+
+}
+
+.avatar_detaile_dev_avatar {
+    width: 160px;
+    height: 160px;
+}
+
+.grid_element {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 60%;
+    place-items: center;
+}
+
+.max-len__detail {
+    width: 635px;
+}
+
+.grid__toggle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 40%;
+    place-items: center;
+}
+
+.create-post {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  z-index: 10000000000000;
+  display: grid;
+  place-items: center;
+  
+}
+
+.create-post-modal {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    position: relative;
+    height: auto;
+    z-index: 10000000000000;
+    top: -180px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  z-index: 100000000000000000;
+  font-size: 24px;
+}
+
+.user__details {
+    position: fixed;
+    right: 16px;
+    top: 40px;
+    
+}
+
+.detaile_title {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+    .grid__toggle {
+        grid-template-columns: repeat(2, 1fr);
+        width: 30%;
+    }
+    .max-len__detail {
+        width: 580px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .grid__toggle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 350px;
+        width: 80%;
+        place-items: center;
+    }
+    .grid_element {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        place-items: center;
+    }
+
+    .user__details {
+        top: 40px;
+        left: 5%;
+        right: 5%;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid__toggle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 350px;
+        width: 95%;
+        place-items: center;
+    }
+    .grid_element {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        place-items: center;
+    }
+
+    .user__details {
+        top: 40px;
+        left: 5%;
+        right: 5%;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid__toggle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 350px;
+        width: 95%;
+        place-items: center;
+    }
+    .grid_element {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        place-items: center;
+    }
+
+    /* .user__details {
+        top: 40px;
+        left: 5%;
+        right: 5%;
+    } */
+
+    .card__user {
+        width: 226px;
+    }
+
+    .max-len__detail {
+       max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .grid__toggle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 300px;
+        width: 100%;
+        place-items: center;
+    }
+    .grid_element {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        place-items: center;
+    }
+
+    .card__user {
+        width: 165px;
+    }
+
+    .max-len__detail {
+       width: 360px;
+       padding: 0;
+    }
+
+    .main__user_card {
+        width: 100%;
+        margin: 0px;
+        border: none;
+        margin-left: -10px;
+    }
+
+    .image__detaile {
+        height: 100px;
+    }
+
+    .avatar_detaile_dev {
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        left: 10px;
+    }
+    .avatar_detaile_dev_avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user__details {
+        left: 2%;
+    }
+
+    .detaile_title {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: -5px;
+    }
+}
