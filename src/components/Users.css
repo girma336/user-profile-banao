@@ -182,12 +182,14 @@
         margin-top: 300px;
         width: 100%;
         place-items: center;
+        gap: 8px;
     }
     .grid_element {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         place-items: center;
+        gap: 8px;
     }
 
     .card__user {
@@ -204,6 +206,7 @@
         margin: 0px;
         border: none;
         margin-left: -10px;
+        padding: 0;
     }
 
     .image__detaile {
